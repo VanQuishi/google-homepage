@@ -26,6 +26,19 @@ textarea{
     resize: none;  /*remove the resize corner from a textarea element*/
 }
 
+textarea:hover{
+    box-shadow: 0 0 8px #cec3c3;  /*format: [horizontal shadow] [vertical shadow] [blurry effect] [color]*/
+}
+
+#left-button{
+    padding: 12.5px 25px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    color: #000;
+    background-color: #f2f2f2;
+}
+
 #logo{
     position: absolute;
     left: 50%;
