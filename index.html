@@ -1,53 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Google</title>   <!--dont have the google icon for the tab yet-->
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <title>Etch-A-Sketch</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
 
-    <body>
-
-        <div id="logo">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+   <div class="flex-container">
+        <div class=title>
+            <p class=text>ETCH-A-SKETCH</p>
         </div>
 
-        <div>
-            <form class="search">
-                <textarea rows="3" cols="80"></textarea>
-            </form>
-        </div>
+        <div class="container"></div>
 
-        <img class="search" id="magnifying" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxATEBUTExIVEBQXFxUXFRcXFQ8fGhcaHxUXFhUYHxUYHSogGBslGxUVITEhJSkrLjIuFx83ODYtNygtLisBCgoKDQ0NDw8NDisZFRkrKzc3Ny0rKysrLSsrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEBAAMBAQEAAAAAAAAAAAAAAQUGBwIEA//EAEIQAAEDAgQEAwQHBQYHAQAAAAEAAjEhYQMEEXEFQVGxBhKBIlKRoQcTFDJCYsGS0eHw8SNTcoKywhYkNFSj0uIz/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AO3pr0Q9FLBBSeQQnlzUiglIuUFJ0uUJ0Ui5SKmUF10lNeZUuUuUFB5miA/BSdknbugoOuya67KTslgguvRCeQUsEigQUnkEJ9SpFykXKCk6XKa6SpFTKXKC68ygPM0UuUmphBQfRAddlJ27pOyCg67Jr0UmgSwQUnkEJ5BSKBIuUFJ9SrqvMXKoGkygqqiqDyTyCkUEqk9JUi5QIuUi5SLlIqZQIqZS5S5S5QLlJ2SdknbugTt3SdknZLBAsEsP6IegSKBAigSLlIuUi5QIuUiplIqZS5QLlLlLlJqYQJqYSdu6Tt3SdkCdkmgSaBLBAsEigSKBIuUCLlIuUi5SKmUCKmVQOZUuVQOZQVVTVVB5J03Ui5VJ0UiplAiplLlLlLlAHUpOyTshPM0A/n4IE7d1j+Lcby+AP7R4B5NFXHZo5XNFrPHvF73v+oyQLyaecDUmzB0/Mf4pwfwR5j9Zmnl7jUsDjP5nyTt8Sg/HN+OsbEd5Mrgbagud+w2PmvxGW41jS5+GP8TGaejarfMrlMPCb5MJjcMflAH9Sv2igQc+/wCE+JGcwNb42P8AuT/h3i2H9zHLj0bj4nZ2gXQYuUi5Qc9PGOLZauLhnEbzLmAj9vDj1Ky3CfHWXfTGacFx5/eZ8RUeo9VtkVMrD8W8M5XHBL2eR5/GzQH15O9Qgy2FiNc0PDg4GCCCNLESvVyuc42Tz3DXedjvrcHXU0Pl/wAzPwH8w+PJbjwDjuFm26t9lzfvYZNRe4ugys1MJO3dJ27pOyBOyWCWCWCBYJFAkUCRcoEXKRcpFykVMoEVMpcpcpcoFyqK1UmphUV27oPWqIiDyaVUuVT1KlygXKTsk7JO3dAnbutD8TcaxM3jfY8rVpOj3D8fWvLDHM8++U8eccOFhfVMOj8QHUiWsgncwPXov38G8C+z4XmcNMV4BefdHJg/W+wQfV4d4BhZVmjfaxD9/E0qbDoLLL2CWCRQIEUCRcpFykXKBFykVMpFTKXKBcpcpcpNTCCFocKinQ891oXiTgD8s/7VlNWtadXNH4OpA5sPMcto36du6OHmpIg3tsgxXhzjbc3heYey5ugxG9Db8p5fwWVmgXOuJYDuG51uJh6/Uv1oPd19vD3FCPS66FgYzXta5h1a4Ag2I1CD3YJFAkUCRcoEXKRcpFykVMoEVMpcpcpcoFyk1MJNTCTt3QJ27q667KTt3V16IPSKaKoPJHMqTsqR8FJ27oE7d1HO9AJKs7LDeMc59XksUihIDB/mPlPyJQarwRhz3EnYzq4bD5gLA6YTfl5vQroZ6Bat9HeU8uVL+eI4nX8rfZHzDj6raYoECKBIuUi5SLlAi5SKmUiplLlAuUuUuUmphAmphJ27pO3dJ2QJ2SaBLBLBBivE/DBmMs/DA9oDzMs4QPWo9Vhfo64kXYLsA/ewzq3X3XH9Ha/ELb4oFz3I/wDLcZcwUa9zm+jwHtHo7yj0QdCi5SLlIuUiplAiplLlLlLlAuUmphJqYSdu6BO3dJ27pO3dJoIQJoIV15BSwVsEF0VUVQeSNdlJ2VNdlLBAsFqH0l4umXwmDnia/Bjv/ZbfYf0WmfSa3+ywdPfd/p/gg2Hw1h+XJ4DR/dsPxHmPdZKLlfFwJ3/K4GknCwv9DV9sXKBFykVMpFTKXKBcpcpcpNTCBNTCTt3Sdu6TsgTsk0CTQJYIFgkUCRQJFygRcrn3jcfV8QwcQTphO9W4h/TRdBi5XPvpD/6rBHPyD54h0QdCivNS5VuVLlAuUmphJqYSdu6BO3dJ27pO3dJoIQJoISwSwSwQLBUUpzUigqVRTdB6RRVB5PRSwVJ5BSKBAigWr/SLl9cmHCWYjXHYgs7uC2iLlfJxjJDFy+Jhc3tIG8t+B0QfD4NzAdkcEyQCz9klo+QCzMVMrSPo2z2gxcB1HA+do5+68ehDfiVu9ygXKXKXKTUwgTUwk7d0nbuk7IE7Ia0CTQJYIFgkUCRQJFygRcpFykXKRUygRUyue8fP13F8Nk+U4LTsP7R3ycVv+NitY1z3nQNBJPQAalaF4Iwzj53FzThRvmcLOeSAPRvmHwQdAuUmphJqYSdu6BO3dJ27pO3dJoIQJoISwSwSwQLBIoJSKCUi5QIuVQNJlSKmVQOZQVVRVB5J5BSLlUn4qRcoEXKRUykVMpcoOe+I8J2Sz7M0wew8lxA6xit3IOu5st+y2O3EY3EadWuALTY/qvl41wtmZwXYb6a1afdcId/PIlad4V4s7K4xymZ9hvm9kmGuN/cdOt7nQN/mphJ27pO3dJ2QJ2SwSaBLBAsEigSKBIuUCLlIuUi5SKmUCKmUuUuVjuO8Xw8thHEfUwxnNx6fvPJBgPpC4v5cMYDT7eJoXAcma0G7iPgCsx4T4T9nyzWuGj3e2/c8vQAD0K0XK8EzeeGJmdRqSdPNqPOQIbYaAVp8Cs14V8Uua4ZbNEtIPla91CD7r9e/x6oN4nbuk7d0nbuk0EIE0EJYJYJYIFgkUEpFBKRcoEXKRUykVMpcoFyqBzKlyqK1QXVVTVVB5J03UiplU0qpcoFylylyk1MIE1MLCeJ/DzM2zUaMxGj2Hdfyu/L2+IObnbuk7INB4H4kxcq77Nmw4NbQOqXNHKPvs6EfPlveBjtxGhzHBzTDmkEHYhfHxjg+DmW+TEbEOFHN2P6QtMxeD8QyLi7LuOLhyfKNf2sLrcfJB0KwSKBaXw7x8z7uNhFh5uZUX1aaj5rP5XxJknj2cdmp94+U/B2iDKxcpFyvwbncHTUYjHbPZ+9fni8VyzKvx8IG72fvQfXFTKXK17OeM8lhw84zujGn/U7QfNa7mfFOdzTizLYZwx+WrvV5ozem6DauPeI8HLD2j58TT2cMGtiT+EfyNVomRec/nG/acUMBgVA01pht5N1v8ytg4H4HGv1mad5zPkBOmvVzpdsPmv38VeEm4o+ty7QzEA+6NAHgRpya7p1+aDasDBa1oa0BrGgBoHQLA+KfDLM0POzRmMBR3J/5XfoVjPCniokjL5klrgfK17qEmPI7WHctefOs7oa0CDQfDXiZ+A77LmtWhp8oc6WflPVvQ8to34Hp8VhPE3h3DzTaaMxWj2X/AO13UdviDrHh/wAQYuTxPsuZBDAdATU4d/zM/kIOhWCRQSox4IBaQ7WoINCOuvRWLlAi5SKmUiplLlAuUuUuUmphAmphUV2Unburrrt3QekREHk9SpcqkcypNTCBNTCTt3Sdu6TsgTsk0CWCWCBYJFAkUCRcoPg4jwXLY3/6YTXu97TR37QqsFmvAOWP3H4jD01aR8xr81tkXKRUyg0Z/wBHY/7n/wAX/wBr3hfR4wVfmHH/AAsaO5K3a5S5Qa9kvBmSZVzHYh/O4kfsjQH4LPYGAxrQGtaxohrQAB6Be5qYSdu6BO3dJ27pO3dJoIQa14s8LtzIOJhANxgK8hiWN+h9DbFeFvFDsN32bNEtIPla90tPuu1+R+PVb1YLAeKfDTMy3VmjMYCjuTh7rv0PJBn7BYjxFwDCzLND7OIPuP5ix6tstX8NeJMTLP8As2aBaAfKHOnD6A9WdDy2jf2kaaiusX/gg51wXjONw/FOXzDScPXfy6/iaebD0356g9CwcVrmh7XB4cNQRBHLRfBx7guFmcPy4lHD7jwKtNuo6haTwziOY4bj/U4wLsInXQRp77D3H6oOkXKXK/LK5hmIwYjXBzSNWkR/VfrNTCBNTCTt3Sdu6Tt3QJ27q69IUmghXXkEHrRFNFUHkhSdu6pGuyk7IE7JNAk0CWCBYJFAkUCRcoEXKRcpFykVMoEVMpcpcpcoFyk1MJNTCTt3QJ27pO3dJ27pNBCBNBCWCWCWCBYJFBKRQSkXKDC+JfD2HmWe7jD7j/8Aaere3fVuAcexcliHL5oHyCg5nD6Ee8w29Oi6HFTKxXiHgWHmsPR/svH3HiW2uLIMnhvBAcCHAjUEHUEGNDzXx8Y4ThZnDLMUXaRLD1BWj8H4tj8PxvqMw0nD1ifLqfvsPNp5j9dQeh4GM3EaHtcHMI1aQaEdUHOMrmczwzH8mIC/BcddOTh77ejhTUfHkV0PI5zDx2DEw3BzDH6gjkR0XjifDsPMYZw8RurTHUHk4HkVz/XM8Mx/7zBef8uIP9rx/OoQdKnbuk0EL5uHZ/Dx8MYmEdWn4g82kciF9NggWCtgpYKxRBVVFUHkjXZSaBU9FLBAsEigSKBIuUCLlIuUi5SKmUCKmUuUuUuUC5SamEmphJ27oE7d0nbuk7d0mghAmghLBLBLBAsEiglIoJSLlAi5SKmUiplLlAuUuUuUmphBjuN8Gws1h+XEGhGpY4S09duoWj8Pz+Y4bj/VYwL8EnXQQR77CfmP6rpM7d18XF+F4WZwzh4gpycJaeoKD6MpmWYrA/DcHMNQRz/cvHEMlh4+G7Ce3zMM2PIjoR1XPcPEzfDMUgj6zBcb+R/Qg/gf/NaFfTxPxviYzPqcvhFjnjyk6+Z1ZDQBN0H7fRriuD8fDB1b7LteWupaSNxp8At7sFrvgrgjstgkvGmLiaFw91o18rd6k+tlsUUEoEUEqim6kXKopugqqiqDyTyCkUCpPIKRcoEXKRcpFykVMoEVMpcpcpcoFyk1MJNTCTt3QJ27pO3dJ27pNBCBNBCWCWCWCBYJFBKRQSkXKBFykVMpFTKXKBcpcpcpNTCBNTCTt3Sdu6Tt3QJ27pNBCTQQlggOGtNKc1+eFgMZRjGtPPRoHZfpYJFBKBFBKRcpFykXKBFyqBzKkVKoHMoKqiIPJPxUi5XoqAaV5oJFTKXKoHMoBzKCXKTUwrprKaa7d0Enbuk7d1TXZD0QSaCEsFT0CWCCWCRQSrESmmlygkXKRUyqBpWSgHMoJcpcqgcymmsoJNTCTt3V012Q127oJO3dJoIVPTkh6BBLBLBWwSIQSKCUi5V00uUA0uUEi5SKlUDmUA5lBLlUVqU01qUnZBdVURBEVRBEKqIBREQFAqiCBFUQFFUQRFUQQoVUQEREAKBVEERVEERVEEVREEKqIgiIiD//2Q==" width="20px" height="20px">
-    
-        <a href="https://www.consumerwatchdog.org/privacy-technology/how-google-and-amazon-are-spying-you">
-        <img class="search" id="mic" src="data:image/png;base64,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" width="20px" height="25px" title="Search by voice">
-        </a>
+        <div class="button">
+            <button class="btn">MAKE NEW SKETCH</button>
+        </div> 
 
-        <a href="https://www.google.com/">
-        <button type="button" id="left-button">Google Search</button>
-        </a>
-        
-        <a href="https://www.google.com/search?q=best+sushi+in+houston&oq=best+sushi+&aqs=chrome.1.69i57j0l7.5146j0j7&sourceid=chrome&ie=UTF-8">
-        <button type="button" id="right-button">I'm Feeling Hungry</button>
-        </a>
+    </div>
 
-        <ul class="header">
-            <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
-            <li><a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
-            <li id="icon" style="float:right" class="top-right"><a href="https://www.google.com/intl/en/about/products?tab=wh"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAGFBMVEX///8AAAB2dnbq6upycnLw8PClpaVqamqbHlFjAAAAaklEQVRIie2UwQoAIQhETS3//4+3Ng9pNw+LbL3TwDAgMyDAJTWNccCt6yqvRqnOsHCZcNekupAzLKgO+shq/DcSaCywS1oqTcb5oJo2wyBajIBrbDUsaddPGwmUHJgyLff1fRA5/PWdyQOrzwWNNB0XNgAAAABJRU5ErkJggg==" width="30" length="30"></a></li>
-            <li style="float:right" class="top-right"><a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
-            <li style="float:right" class="top-right"><a href="https://www.google.com/gmail/about/">Gmail</a></li>
-        </ul>
-
-        <ul class="footer">
-            <li><a href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
-            <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
-            <li><a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
-            <li style="float:right" class="bot-right"><a href="https://www.google.com/preferences?hl=en">Settings</a></li>
-            <li style="float:right" class="bot-right"><a href="https://policies.google.com/terms?fg=1">Terms</a></li>
-            <li style="float:right" class="bot-right"><a href="https://policies.google.com/privacy?fg=1">Privacy</a></li>
-        </ul>
-        
-    </body>
+    <script src="interaction.js"></script>
+</body>
 </html>
